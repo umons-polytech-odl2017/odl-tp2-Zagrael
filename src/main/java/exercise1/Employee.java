@@ -1,15 +1,23 @@
 package exercise1;
 
-public class Employee {
-	public int computeSalary() {
-		return 0;
-	}
+import exercise2.Payable;
 
-	public void sell() { }
+public abstract class Employee implements Payable {
+	protected String nom;
 
-	public void workOneHour() { }
+	// Constructeurs
 
+	// Accesseurs
 	public String getName() {
-		return null;
+		return nom;
 	}
+
+	// Méthodes
+	public abstract int computeSalary();
+
+	public void sell() {}
+
+	public void workOneHour() {}
+
 }
+
